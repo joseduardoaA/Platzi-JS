@@ -21,11 +21,11 @@ Uso de with:
 
 'use strict';
 with(obj) {
-    // Error: Strict mode code may not include a with statement
+    Error: Strict mode code may not include a with statement
 }
 Argumentos duplicados en funciones:
 
 'use strict';
 function myFunction(a, b, a) {
-    // Error: Duplicate parameter name not allowed in this context
+     Error: Duplicate parameter name not allowed in this context
 } */

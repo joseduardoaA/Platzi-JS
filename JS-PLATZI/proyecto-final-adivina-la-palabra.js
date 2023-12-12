@@ -25,7 +25,7 @@ function jugarAdivinaLaPalabra() {
             if(intentos>0){
                 alert(`La palabra que haz ingresado es incorrecta te quedan ${intentos} intentos restantes`)
             } else{
-                alert(`Te quedaste sin intentos, la palabra ocuta es ${palabraOculta}`)
+                alert(`Te quedaste sin intentos, la palabra ocuta era ${palabraOculta}`)
             }
         }
     }

@@ -2,9 +2,7 @@
 
 Implicit Binding:
 Ocurre cuando se invoca un método de un objeto, y this se vincula al objeto que contiene el método.
-
 Ejemplo:
-
 const person = {
   name: 'Adam',
   greet: function() {
@@ -14,11 +12,10 @@ const person = {
 
 person.greet(); // Output: Hello, I'm Adam
 
+
 Explicit Binding:
 Ocurre cuando se usan métodos como call, apply, o bind para establecer explícitamente el valor de this.
-
 Ejemplo:
-
 function greet() {
   console.log(`Hello, I'm ${this.name}`);
 }
@@ -26,20 +23,20 @@ function greet() {
 const adam = { name: 'Adam' };
 
 greet.call(adam); // Output: Hello, I'm Adam
+
+
 New Binding:
 Ocurre cuando una función se invoca con la palabra clave new, creando así un nuevo objeto y vinculando this a ese objeto.
-
 Ejemplo:
-
 function Person(name) {
   this.name = name;
 }
 
 const adam = new Person('Adam');
 console.log(adam.name); // Output: Adam
+
 Lexical Binding:
 Ocurre cuando se utiliza this en una función dentro de otra función. En este caso, this se vincula al contexto léxico de la función exterior.
-
 Ejemplo:
 
 const person = {
@@ -49,6 +46,7 @@ const person = {
       console.log(`Hello, I'm ${this.name}`);
     };
     innerFunction();
+              
   }
 };
 

@@ -37,7 +37,7 @@ realizarTarea('julio');     // Día no reconocido
 
 // Mi intento
 
-const pla = "sudadera"
+const pla = "playera"
 switch (pla){
     case "sudadera":
         console.log("Las sudaderas cuestan $300")
@@ -50,4 +50,33 @@ switch (pla){
         break;
     default:
         console.log("Lo sentimos, no contamos con ese articulo en nuestra tienda")
+}
+
+switch (edad = 18) {
+    case true: console.log("Eres mayor de edad")
+    break
+    case false: console.log("Falso")
+    break
+}
+
+
+"Se solicita número del 1 al 4"
+
+switch (2){
+
+case 1:
+ console.log("El número ingresado es 1")
+ break
+case 2:
+ console.log("El número ingresado es 2")
+ break
+case 3:
+ console.log("El número ingresado es 3")
+ break
+case 4:
+ console.log("El número ingresado es 4")
+ break
+default: 
+ console.log("El número ingresado no está en el rango 1-4")
+break
 }
